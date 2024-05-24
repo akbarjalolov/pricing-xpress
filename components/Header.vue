@@ -22,12 +22,12 @@
                 {{ item.title }}
               </h2>
               <h2 v-else @click="isMenuOpen = false">
-                <router-link
+                <a :href="item.link"
                   :to="item.link"
                   class="font-bold transition lg:text-[32px] text-[20px] leading-[38px] uppercase text-[#5C6670] w-[230px]"
                 >
                   {{ item.title }}
-                </router-link>
+                </a>
               </h2>
             </div>
             <ul class="transition absolute lg:left-[50%] left-[70%]">
@@ -36,12 +36,12 @@
                 :key="indexes"
                 @click="isMenuOpen = false"
               >
-                <router-link
+                <a
                   class="font-normal transition hover:opacity-60 text-[20px] leading-[24px] text-[#5C6670] mb-[16px]"
-                  :to="items.link"
+                  :href="items.link"
                 >
                   {{ items.title }}
-                </router-link>
+                </a>
               </li>
             </ul>
           </div>
@@ -105,9 +105,9 @@
                   :class="isMenuOpen ? 'burger-active' : ''"
                 />
               </div>
-              <router-link to="/">
+              <a href="https://www.xpresstransportation.org/" >
                 <icons name="logo_header" class="w-[180px] lg:w-[250px]" />
-              </router-link>
+              </a>
             </div>
             <div
               class="items-center gap-[40px] menu-links lg:flex hidden"
@@ -120,11 +120,10 @@
               >
                 <div class="flex items-between gap-4">
                   <div class="main-links">
-                    <a
-                      v-if="item.link !== ''"
-                      href=""
+                    <a v-if="item.link !== ''"
+                      :href="item.link"
                       class="font-semibold text-[16px] leading-[19px] text-[#212525]"
-                      :to="item.link"
+
                     >
                       {{ item.title }}
                     </a>
@@ -140,9 +139,9 @@
                       v-for="(items, indexes) in item.link_child"
                       :key="indexes"
                     >
-                      <router-link :to="items.link">
+                      <a :href="items.link">
                         {{ items.title }}
-                      </router-link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -169,15 +168,15 @@ export default {
       menu: [
         {
           title: "About Us",
-          link: "/about-us"
+          link: "https://www.xpresstransportation.org/about-us"
         },
         {
           title: "Blog",
-          link: "/blog"
+          link: "https://www.xpresstransportation.org/blog"
         },
         {
           title: "Contacts",
-          link: "/contacts"
+          link: "https://www.xpresstransportation.org/contacts"
         }
       ],
       isMenuOpen: false,
