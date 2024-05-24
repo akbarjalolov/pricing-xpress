@@ -16,7 +16,6 @@
     "eslint-plugin-lodash": "^7.2.0",
     "nuxt": "^2.15.3",
     "v-mask": "^2.2.4",
-    "vue-awesome-swiper": "^4.1.1",
     "vue-slick-carousel": "^1.0.6",
     "vuelidate": "^0.7.6"
   },
