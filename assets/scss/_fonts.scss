@@ -1,0 +1,22 @@
+//!<Подключаем шрифты>======================================================================================
+// Convert fonts: https://transfonter.org/
+// font-weight:100-thin,200-UltraLite,300-light,400-normal-regular,500-medium,600-semibold,700-bold,800-Heavy,900-black
+//&display=swap&subset=cyrillic-ext
+//!</Подключаем шрифты>=====================================================================================
+
+@mixin font($font_name, $file_name, $weight, $style: normal) {
+  @font-face {
+    font-family: $font_name;
+    font-weight: #{$weight};
+    font-style: #{$style};
+    font-display: swap;
+    src: url('~@/static/fonts/#{$file_name}.woff') format('woff'),
+      url('~@/static/fonts/#{$file_name}.woff2') format('woff2');
+  }
+}
+
+@include font('PT Root UI', PTRootUI-Bold, 700);
+@include font('PT Root UI', PTRootUI-Light, 300);
+@include font('PT Root UI', PTRootUI-Medium, 500);
+@include font('PT Root UI', PTRootUI-Regular, 400);
+// @include font('PT Root UI', PTRootUIVF, weight);

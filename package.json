@@ -1,0 +1,40 @@
+{
+  "name": "v",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.9.1",
+    "element-ui": "^2.15.1",
+    "eslint-plugin-lodash": "^7.2.0",
+    "nuxt": "^2.15.3",
+    "swiper": "5.x",
+    "v-mask": "^2.2.4",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-slick-carousel": "^1.0.6",
+    "vuelidate": "^0.7.6"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.0",
+    "@nuxt/types": "~2.15.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.18.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "10.2.0"
+  }
+}

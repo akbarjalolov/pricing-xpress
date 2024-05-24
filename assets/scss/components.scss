@@ -1,0 +1,400 @@
+.information-form {
+  background: radial-gradient(circle, rgba(245, 229, 236, .4066001400560224) 0%, rgba(205, 223, 245, .4234068627450981) 100%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+
+  .icon {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    z-index: 1;
+
+    svg path, stroke {
+      stroke: $blue
+    }
+
+    .car_icon {
+      path {
+        stroke: none;
+        fill: $blue;
+      }
+      circle {
+        stroke: $blue;
+      }
+    }
+  }
+
+  .el-autocomplete {
+    width: 100%;
+  }
+  .el-select {
+    width: 100%;
+  }
+  .el-input__inner {
+    background: #ffffff;
+    border: 1px solid #e6ecf0;
+    border-radius: 6px;
+    padding: 10px 50px 10px;
+    width: 100%;
+    height: 47px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 116.96%;
+    color: $black;
+    transition: all 0.35s ease-in-out;
+
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+
+  .el-date-editor {
+    width: 100%;
+
+    .el-input__prefix {
+      display: none;
+    }
+  }
+
+  button {
+    background: #244567;
+    border-radius: 8px;
+    padding: 14rem 24rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background: #FF4E00;
+    }
+    &:active {
+      transform: scale(.9);
+      transition: .1s all;
+    }
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 116.96%;
+    color: #5c6670;
+  }
+
+}
+
+.confirmation {
+  .icon {
+    position: absolute;
+    bottom: 12px;
+    left: 14px;
+    top: unset;
+    z-index: 1;
+  }
+}
+
+.call-us {
+  path:first-child {
+    stroke: #fff;
+  }
+  path:last-child {
+    fill: #fff;
+  }
+}
+
+.call-us-btn {
+  &:hover {
+    background: #FF4E00;
+  }
+  &:active {
+    transform: scale(.9);
+    transition: .1s all;
+  }
+  &:focus {
+    background: #FF4E00
+  }
+}
+
+.steps {
+  p {
+    color: #5C6670;
+    font-size: 18px;
+  }
+
+  svg {
+    path {
+      stroke: #5C6670;
+    }
+
+    circle {
+    stroke: #5C6670;
+    }
+
+    ellipse {
+      stroke: #5C6670;
+    }
+  }
+  .step-icon {
+    background: none;
+    border: 1px solid #5C6670;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .steps-line {
+    width: 50%;
+    height: 2px;
+  }
+
+  .active {
+  p {
+    color: $blue;
+  }
+
+  .step-icon {
+    background: $blue;
+    border: 1px solid #fff;
+  }
+
+    svg {
+      path {
+        stroke: #ffffff;
+      }
+
+      circle {
+        stroke: #ffffff;
+      }
+
+      ellipse {
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  .finished {
+    p {
+      color: #90D26D;
+    }
+
+    .step-icon {
+      background: #90D26D;
+      border: 1px solid #fff;
+    }
+
+    svg {
+      path {
+        stroke: #ffffff;
+      }
+
+      circle {
+        stroke: #ffffff;
+      }
+
+      ellipse {
+        stroke: #ffffff;
+      }
+    }
+  }
+}
+
+
+.pricing-cards {
+  .price-cards {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid $blue;
+    border-radius: 8px;
+    transition: 0.2s all;
+    li {
+      color: #212525;
+    }
+    .badge {
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: $blue;
+      }
+
+      svg {
+        path {
+          stroke: $blue;
+        }
+      }
+    }
+    .btn_blue {
+      background: #244567;
+      width: 100%;
+      border-radius: 8px;
+      padding: 10rem 0rem;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #fff;
+      transition: background-color .3s ease-in-out;
+
+      &:hover {
+        background: #FF4E00;
+      }
+
+      &:active {
+        transform: scale(0.9);
+        transition: .1s all;
+      }
+
+    }
+  }
+  .el-radio__input {
+    display: none;
+  }
+
+  .top-choice {
+    border-color: #FF4E00;
+
+    h1 {
+      color: #FF4E00;
+    }
+
+    h2 {
+      color: #FF4E00;
+    }
+
+    svg {
+      path {
+        stroke: #FF4E00;
+      }
+    }
+
+    .badge {
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+      }
+
+      svg {
+        path {
+          stroke: $blue;
+        }
+      }
+    }
+
+  }
+}
+
+.el-radio.is-bordered+.el-radio.is-bordered {
+  margin: 0;
+}
+
+.quote-details {
+  .el-collapse {
+    border: none;
+
+    .el-collapse-item__header {
+      font-size: 18px;
+      color: #212525;
+      font-weight: normal;
+      line-height: normal;
+      height: auto;
+      padding-bottom: 16px;
+      margin-top: 8px;
+      background: transparent;
+    }
+
+    .el-collapse-item__wrap {
+      background: transparent;
+    }
+
+    h6 {
+      color: #212525;
+      font-size: 16px;
+    }
+
+    p {
+      color: #212525;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.size-of-car-select {
+  border-radius: 8px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 50px !important;
+    height: 50px;
+    margin-right: 12px;
+
+    path {
+      fill: #1a1b26;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #244567;
+  }
+}
+
+.size-of-car-select.selected {
+  span {
+    color: #409EFF;
+    font-weight: 700;
+  }
+
+}
+
+.hasError {
+  input {
+    border: 1px solid red !important;
+  }
+
+  textarea {
+    border: 1px solid red !important;
+
+  }
+
+  p {
+    color: red !important;
+    position: absolute;
+    font-size: 12px !important;
+  }
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid $blue;
+  border-radius: 50%;
+  border-color: #ccc #0000;
+  animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader::before {
+  border-color: #FF4E00 #0000;
+  animation: inherit;
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.loader::after {
+  margin: 8px;
+}
+@keyframes l16 {
+  100%{transform: rotate(1turn)}
+}

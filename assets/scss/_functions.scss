@@ -1,0 +1,283 @@
+//!<ПЕРЕМЕННЫЕ>=============================================================================================
+$blue: #244567;
+$navy: #024959;
+$black: #212525;
+$white: #ffffff;
+$grey: #ecf1f5;
+$fontFamily: 'Exo 2';
+$minWidth: 320;
+$maxWidth: 1440;
+$container: 1192;
+//!</ПЕРЕМЕННЫЕ>============================================================================================
+
+//!<Миксины>================================================================================================
+@mixin adaptiv($indentType, $pcSize, $mobSize, $important: false) {
+  $addSize: $pcSize - $mobSize;
+  $answer: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+  );
+  @if $important == false {
+    #{$indentType}: $pcSize + px;
+    @media (max-width: #{$maxWidth + px}) {
+      #{$indentType}: $answer;
+    }
+  } @else {
+    #{$indentType}: $pcSize + px !important;
+    @media (max-width: #{$maxWidth + px}) {
+      #{$indentType}: $answer !important;
+    }
+  }
+}
+@mixin media($indentType, $value, $mediaSize, $important: false) {
+  @if $important == false {
+    @media (max-width: #{$mediaSize + px}) {
+      #{$indentType}: $value;
+    }
+  } @else {
+    @media (max-width: #{$mediaSize + px}) {
+      #{$indentType}: $value !important;
+    }
+  }
+}
+//!<Миксины>================================================================================================
+
+//!<Dynamic classes>========================================================================================
+@mixin helper($indentType, $pcSize, $mobSize: 0) {
+  $margin: (
+    'm': 'margin',
+  );
+  $padding: (
+    'p': 'padding',
+  );
+  $width: (
+    'w': 'width',
+  );
+  $height: (
+    'h': 'height',
+  );
+  $gap: (
+    'g': 'gap',
+  );
+  $directions: (
+    't': 'top',
+    'b': 'bottom',
+    'r': 'right',
+    'l': 'left',
+  );
+  @if $indentType == 'm' {
+    @each $dim in $margin {
+      @each $dir in $directions {
+        @if $mobSize == 0 {
+          .#{nth($dim, 1)}#{nth($dir, 1)}-#{$pcSize} {
+            #{nth($dim, 2)}-#{nth($dir, 2)}: #{$pcSize}px;
+          }
+        } @else {
+          .#{nth($dim, 1)}#{nth($dir, 1)}-#{$pcSize}-#{$mobSize} {
+            @include adaptiv(
+              #{nth($dim, 2)}-#{nth($dir, 2)},
+              $pcSize,
+              $mobSize,
+              true
+            );
+          }
+        }
+      }
+    }
+  } @else if $indentType == 'p' {
+    @each $dim in $padding {
+      @each $dir in $directions {
+        @if $mobSize == 0 {
+          .#{nth($dim, 1)}#{nth($dir, 1)}-#{$pcSize} {
+            #{nth($dim, 2)}-#{nth($dir, 2)}: #{$pcSize}px;
+          }
+        } @else {
+          .#{nth($dim, 1)}#{nth($dir, 1)}-#{$pcSize}-#{$mobSize} {
+            @include adaptiv(
+              #{nth($dim, 2)}-#{nth($dir, 2)},
+              $pcSize,
+              $mobSize,
+              true
+            );
+          }
+        }
+      }
+    }
+  } @else if $indentType == 'w' {
+    @each $dim in $width {
+      @if $mobSize == 0 {
+        .#{nth($dim, 1)}-#{$pcSize} {
+          #{nth($dim, 2)}: #{$pcSize}px;
+        }
+      } @else {
+        .#{nth($dim, 1)}-#{$pcSize}-#{$mobSize} {
+          @include adaptiv(#{nth($dim, 2)}, $pcSize, $mobSize, true);
+        }
+      }
+    }
+  } @else if $indentType == 'h' {
+    @each $dim in $height {
+      @if $mobSize == 0 {
+        .#{nth($dim, 1)}-#{$pcSize} {
+          #{nth($dim, 2)}: #{$pcSize}px;
+        }
+      } @else {
+        .#{nth($dim, 1)}-#{$pcSize}-#{$mobSize} {
+          @include adaptiv(#{nth($dim, 2)}, $pcSize, $mobSize, true);
+        }
+      }
+    }
+  } @else if $indentType == 'g' {
+    @each $dim in $gap {
+      @if $mobSize == 0 {
+        .#{nth($dim, 1)}-#{$pcSize} {
+          #{nth($dim, 2)}: #{$pcSize}px;
+        }
+      } @else {
+        .#{nth($dim, 1)}-#{$pcSize}-#{$mobSize} {
+          @include adaptiv(#{nth($dim, 2)}, $pcSize, $mobSize, true);
+        }
+      }
+    }
+  }
+}
+//!<Dynamic classes>========================================================================================
+
+//!<Buttons>================================================================================================
+@mixin btn($indentType, $pcSize, $mobSize: 0) {
+  @if $mobSize == 0 {
+    .mx-#{$pcSize} {
+      max-width: #{$pcSize}px;
+      width: 100%;
+    }
+  } @else {
+    .mx-#{$pcSize}-#{$mobSize} {
+      @include adaptiv(max-width, $mobSize);
+      width: 100%;
+    }
+  }
+}
+//!<Buttons>================================================================================================
+
+//!<Settings-Styles>========================================================================================
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-out;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease-out;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+._hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  transition: all 0.3s;
+}
+.d- {
+  &f {
+    display: flex !important;
+  }
+  &g {
+    display: grid !important;
+  }
+  &b {
+    display: block !important;
+  }
+  &ib {
+    display: inline-block !important;
+  }
+  &n {
+    display: none !important;
+  }
+}
+.ai- {
+  &c {
+    align-items: center !important;
+  }
+  &e {
+    align-items: flex-end !important;
+  }
+  &s {
+    align-items: flex-start !important;
+  }
+}
+.jc- {
+  &c {
+    justify-content: center !important;
+  }
+  &e {
+    justify-content: flex-end !important;
+  }
+  &s {
+    justify-content: flex-start !important;
+  }
+  &sb {
+    justify-content: space-between !important;
+  }
+  &sa {
+    justify-content: space-around !important;
+  }
+}
+.grid-cols-1,
+.grid-cols-2,
+.grid-cols-3,
+.grid-cols-4,
+.grid-cols-5,
+.grid-cols-6,
+.grid-cols-7,
+.grid-cols-8,
+.grid-cols-9,
+.grid-cols-10,
+.grid-cols-11,
+.grid-cols-12 {
+  display: grid;
+}
+.grid-cols-3 {
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.grid-cols-4 {
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.grid-cols-5 {
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.grid-cols-6 {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+//!<Settings-Styles>========================================================================================
