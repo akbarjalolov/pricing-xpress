@@ -2,14 +2,39 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: true,
   head: {
-    title: "Cost Calculator | Xpress Auto Transport Inc.",
+    title: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes',
     meta: [
-      { charset: "utf-8" },
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1"
+        hid: 'description',
+        name: 'description',
+        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
       },
-      { hid: "description", name: "description", content: "" }
+      {
+        name: 'keywords',
+        content: 'car shipping, car shipping cost calculator, vehicle transport, auto transport quotes, car transport rates'
+      },
+      {name: 'robots', content: 'index, follow'},
+
+      // Open Graph / Facebook
+      {property: 'og:type', content: 'website'},
+      {property: 'og:title', content: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes'},
+      {
+        property: 'og:description',
+        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
+      },
+      {property: 'og:url', content: 'https://pricing.xpresstransportation.org/'},
+      {property: 'og:image', content: 'https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg'},
+
+      // Twitter
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:title', content: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes'},
+      {
+        name: 'twitter:description',
+        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
+      },
+      {name: 'twitter:image', content: 'https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg'}
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }]
   },
@@ -56,4 +81,4 @@ export default {
     extractCSS: true,
     cssSourceMap: false
   }
-};
+}
