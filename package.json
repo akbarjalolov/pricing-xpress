@@ -1,5 +1,5 @@
 {
-  "name": "v",
+  "name": "Xpress",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
-    "@nuxtjs/yandex-metrika": "^1.4.0",
     "core-js": "^3.9.1",
     "element-ui": "^2.15.1",
     "eslint-plugin-lodash": "^7.2.0",

@@ -993,7 +993,7 @@ export default {
 </svg>
 
 `,
-  us_map: `<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 959 593">
+  us_map: `<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 959 593">
 <defs>
 <style type="text/css">
 .state {fill:#D0D0D0}                        /* default color for all states not specified below */

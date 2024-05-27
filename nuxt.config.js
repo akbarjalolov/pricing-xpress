@@ -64,18 +64,7 @@ export default {
   modules: [
     "@nuxtjs/style-resources",
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
-    [
-      '@nuxtjs/yandex-metrika',
-      {
-        id: '97407595',
-        webvisor: true,
-        clickmap: true,
-        useCDN: false,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      }
-    ]
+    "@nuxtjs/axios"
   ],
 
   styleResources: {
