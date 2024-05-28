@@ -500,7 +500,7 @@
 
           <div
             v-if="step > 3"
-            class="col-span-12 lg:col-span-5"
+            class="col-span-12 lg:col-span-5 hidden lg:block"
             style="height: fit-content"
           >
             <icons name="us_map" />
@@ -581,36 +581,13 @@
             </div>
           </div>
           <div
-            class="lg:col-span-6 col-span-12"
+            class="lg:col-span-6 col-span-12 hidden lg:block"
             style="height: fit-content"
             :class="step > 2 ? 'hidden' : 'block'"
           >
             <icons name="us_map" />
           </div>
         </div>
-        <div>
-          <!--        <img src="/src/assets/images/main bg.png"-->
-          <!--             class=" absolute right-[-10%] top-[50%] transform translate-y-[-50%] z-[1] hidden lg:block " alt=""/>-->
-          <img
-            src="/images/left-grad-eff.png"
-            class="absolute left-0 top-[50%] transform w-[25%] translate-y-[-50%] h-auto z-[0] pointer-events-none"
-            alt=""
-          />
-          <img
-            src="/images/right-grad-eff.png"
-            class="absolute right-0 top-[50%] transform translate-y-[-50%] z-[0] pointer-events-none"
-            alt=""
-          />
-          <icons
-            class="lg:block absolute right-0 top-[50%] transform translate-y-[-50%] z-[0] h-auto w-full lg:w-auto pointer-events-none hidden"
-            name="right_side_anim"
-          />
-          <icons
-            class="absolute left-0 top-[50%] transform rotate-[180deg] translate-y-[-50%] z-[0] h-full w-full lg:w-auto pointer-events-none !hidden lg:inline-flex"
-            name="right_side_anim"
-          />
-        </div>
-
         <div class="grid grid-cols-12 grid-flow-row mt-[40rem] gap-[32rem]">
           <div
             class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
@@ -647,6 +624,33 @@
             </div>
           </div>
         </div>
+        <div>
+          <!--        <img src="/src/assets/images/main bg.png"-->
+          <!--             class=" absolute right-[-10%] top-[50%] transform translate-y-[-50%] z-[1] hidden lg:block " alt=""/>-->
+          <img
+            src="/images/left-grad-eff.png"
+            class="absolute left-0 top-[50%] transform w-[25%] translate-y-[-50%] h-auto z-[0] pointer-events-none"
+            alt=""
+          />
+          <img
+            src="/images/right-grad-eff.png"
+            class="absolute right-0 top-[50%] transform translate-y-[-50%] z-[0] pointer-events-none"
+            alt=""
+          />
+          <icons
+            class="lg:block absolute right-0 top-[50%] transform translate-y-[-50%] z-[0] h-auto w-full lg:w-auto pointer-events-none hidden"
+            name="right_side_anim"
+          />
+          <icons
+            class="absolute left-0 top-[50%] transform rotate-[180deg] translate-y-[-50%] z-[0] h-full w-full lg:w-auto pointer-events-none !hidden lg:inline-flex"
+            name="right_side_anim"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="lg:text-[30px] text-[25px] font-bold text-center">
+          Trust Your Vehicle Transport Quote to Xpress Auto Transport
+        </h1>
       </div>
     </div>
   </main>
