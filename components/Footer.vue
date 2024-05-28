@@ -7,9 +7,8 @@
         <div class="col-span-12 lg:col-span-6">
           <img
             src="@/static/images/footer_logo.png"
-            class="mb-[24px] cursor-pointer"
+            class="mb-[24px] cursor-pointer w-[180px] lg:w-[250px]"
             alt=""
-            @click="top()"
           />
           <a
             href="tel: (929) 566-5040"
@@ -63,7 +62,7 @@
         <div
           v-for="(item, index) in menu"
           :key="index"
-          class="col-span-6 lg:col-span-3"
+          class="col-span-6 lg:col-span-3 hidden lg:block"
         >
           <h6
             class="font-bold text-[18px] leading-[22px] text-[#fff] uppercase mb-[16px]"
@@ -85,7 +84,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-span-6 lg:col-span-3 ml-[-40px] lg:ml-0">
+        <div
+          class="col-span-6 lg:col-span-3 ml-[-40px] lg:ml-0 hidden lg:block"
+        >
           <h6
             class="font-bold text-[18px] leading-[22px] text-[#fff] uppercase mb-[16px]"
           >
