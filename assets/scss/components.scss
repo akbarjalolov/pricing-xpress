@@ -402,3 +402,7 @@
 .el-scrollbar__bar {
   opacity: 1!important;
 }
+
+.el-autocomplete-suggestion__list li::before {
+  display: none !important;
+}
