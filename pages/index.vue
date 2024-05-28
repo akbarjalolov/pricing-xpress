@@ -504,6 +504,7 @@
             style="height: fit-content"
           >
             <icons name="us_map" />
+            asdsadas
           </div>
 
           <div v-if="step > 2" class="col-span-12 lg:col-span-3 quote-details">
@@ -581,11 +582,26 @@
             </div>
           </div>
           <div
-            class="lg:col-span-6 col-span-12 hidden lg:block"
+            class="lg:col-span-6 col-span-12"
             style="height: fit-content"
             :class="step > 2 ? 'hidden' : 'block'"
           >
-            <icons name="us_map" />
+            <icons name="us_map" class="hidden lg:block" />
+            <div
+              class="flex items-center justify-center cursor-pointer mt-[0rem] lg:mt-[100rem]"
+            >
+              <div
+                class="bg-[#244567] flex items-center gap-[16px] py-[8px] px-[10px] rounded-[8px] hover:bg-[#FF4E00] transition"
+              >
+                <icons name="video_play" />
+                <div>
+                  <h2 class="text-[20rem] text-[#fff]">
+                    What are our customer's saying?
+                  </h2>
+                  <p class="text-[12px] text-[#fff]">Run time 42 seconds</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="grid grid-cols-12 grid-flow-row mt-[40rem] gap-[32rem]">
