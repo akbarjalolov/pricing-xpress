@@ -406,3 +406,11 @@
 .el-autocomplete-suggestion__list li::before {
   display: none !important;
 }
+
+.logo-header {
+  @media screen and (max-width: 1023px) {
+    svg {
+      width: 180px;
+    }
+  }
+}

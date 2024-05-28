@@ -105,8 +105,8 @@
                   :class="isMenuOpen ? 'burger-active' : ''"
                 />
               </div>
-              <a href="https://www.xpresstransportation.org/" >
-                <icons name="logo_header" class="w-[180px] lg:w-[250px]" />
+              <a class="logo-header" href="https://www.xpresstransportation.org/" >
+                <icons name="logo_header" />
               </a>
             </div>
             <div
