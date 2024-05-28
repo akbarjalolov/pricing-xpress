@@ -6,7 +6,7 @@
       <div class="grid grid-cols-12 pl-[15px] gap-[24rem]">
         <div class="col-span-12 lg:col-span-6">
           <img
-            src="/src/assets/images/footer_logo.png"
+            src="@/static/images/footer_logo.png"
             class="mb-[24px] cursor-pointer"
             alt=""
             @click="top()"

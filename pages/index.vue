@@ -615,34 +615,35 @@
           <div
             class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
           >
-            <icons name="secure" />
+            <icons name="doorToDoor" />
             <div>
-              <h6 class="text-[20px] font-bold text-[#ff4e00]">
-                SAFE SHIPPING
+              <h6 class="text-[20rem] font-bold text-[#ff4e00]">
+                DOOR TO DOOR DELIVERY
               </h6>
-              <p>High value insurance</p>
+              <p class="text-[16rem]">From Your Location to Your Destination</p>
             </div>
           </div>
           <div
             class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
           >
-            <icons name="doorToDoor" />
+            <icons name="secure" />
             <div>
-              <h6 class="text-[20px] font-bold text-[#ff4e00]">
-                DOOR TO DOOR DELIVERY
+              <h6 class="text-[20rem] font-bold text-[#ff4e00]">
+                SAFE SHIPPING
               </h6>
-              <p>From Your Location to Your Destination</p>
+              <p class="text-[16rem]">High value insurance</p>
             </div>
           </div>
+
           <div
             class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
           >
             <icons name="pricetag" />
             <div>
-              <h6 class="text-[20px] font-bold text-[#ff4e00]">
+              <h6 class="text-[20rem] font-bold text-[#ff4e00]">
                 AFFORDABLE PRICING
               </h6>
-              <p>Cost-Effective Rates</p>
+              <p class="text-[16rem]">Cost-Effective Rates</p>
             </div>
           </div>
         </div>
