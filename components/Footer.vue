@@ -76,12 +76,12 @@
               :key="indexes"
               class="mb-[12px]"
             >
-              <router-link
+              <a
                 class="text-[#fff] text-[14px] leading-[17px] font-semibold transition"
-                :to="items.link"
+                :href="items.link"
               >
                 {{ items.title }}
-              </router-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -181,12 +181,30 @@ export default {
           title: "Pages",
           link: "",
           child: [
-            { title: "Main Page", link: "/" },
-            { title: "About Us", link: "/about-us" },
-            { title: "Contact Us", link: "/contact" },
-            { title: "Blog", link: "/blog" },
-            { title: "Terms&Conditions", link: "/terms-and-conditions" },
-            { title: "Privacy&Policy", link: "/privacy-policy" },
+            {
+              title: "Main Page",
+              link: "https://www.xpresstransportation.org/",
+            },
+            {
+              title: "About Us",
+              link: "https://www.xpresstransportation.org/about-us",
+            },
+            {
+              title: "Contact Us",
+              link: "https://www.xpresstransportation.org/contacts",
+            },
+            {
+              title: "Blog",
+              link: "https://www.xpresstransportation.org/blog",
+            },
+            {
+              title: "Terms&Conditions",
+              link: "https://www.xpresstransportation.org/terms-and-conditions",
+            },
+            {
+              title: "Privacy&Policy",
+              link: "https://www.xpresstransportation.org/privacy-policy",
+            },
           ],
         },
       ],
