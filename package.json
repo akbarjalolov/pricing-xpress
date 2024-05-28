@@ -15,6 +15,7 @@
     "eslint-plugin-lodash": "^7.2.0",
     "nuxt": "^2.15.3",
     "v-mask": "^2.2.4",
+    "@fancyapps/ui": "^5.0.32",
     "vue-slick-carousel": "^1.0.6",
     "vuelidate": "^0.7.6"
   },
