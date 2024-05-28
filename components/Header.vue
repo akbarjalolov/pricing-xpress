@@ -181,9 +181,28 @@ export default {
       ],
       isMenuOpen: false,
       isWidgetOpen: false,
-      isScrolled: false
+      isScrolled: false,
+      heightDevice: ""
     };
-  }
+  },
+  created() {
+    if (process.client) {
+      this.heightDevice = window.innerHeight;
+      window.addEventListener("scroll", this.handleScroll);
+    }
+  },
+
+  methods: {
+    handleScroll(event) {
+      this.scrollTop = process.client ? window.pageYOffset : 0;
+      if (this.scrollTop > 50) {
+        this.isScrolled = true
+      } else {
+        this.isScrolled = false
+      }
+    },
+
+  },
 };
 </script>
 <style lang="scss">

