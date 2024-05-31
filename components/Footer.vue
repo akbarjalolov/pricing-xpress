@@ -1,6 +1,6 @@
 <template>
   <div
-    class="footer bg-[#244567] pt-[48rem] pb-[24rem] relative overflow-hidden"
+    class="footer bg-[#244567] pt-[48rem] pb-[24rem] relative overflow-hidden mt-[30rem]"
   >
     <div class="container relative z-[1]">
       <div class="grid grid-cols-12 pl-[15px] gap-[24rem]">
