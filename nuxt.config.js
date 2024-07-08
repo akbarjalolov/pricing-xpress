@@ -2,41 +2,64 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: true,
   head: {
-    title: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes',
+    title: "Car Shipping Cost Calculator | Get Instant Car Transport Quotes",
     meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
+        hid: "description",
+        name: "description",
+        content:
+          "Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.",
       },
       {
-        name: 'keywords',
-        content: 'car shipping, car shipping cost calculator, vehicle transport, auto transport quotes, car transport rates'
+        name: "keywords",
+        content:
+          "car shipping, car shipping cost calculator, vehicle transport, auto transport quotes, car transport rates",
       },
-      {name: 'robots', content: 'index, follow'},
+      { name: "robots", content: "index, follow" },
 
       // Open Graph / Facebook
-      {property: 'og:type', content: 'website'},
-      {property: 'og:title', content: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes'},
+      { property: "og:type", content: "website" },
       {
-        property: 'og:description',
-        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
+        property: "og:title",
+        content:
+          "Car Shipping Cost Calculator | Get Instant Car Transport Quotes",
       },
-      {property: 'og:url', content: 'https://pricing.xpresstransportation.org/'},
-      {property: 'og:image', content: 'https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg'},
+      {
+        property: "og:description",
+        content:
+          "Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.",
+      },
+      {
+        property: "og:url",
+        content: "https://pricing.xpresstransportation.org/",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg",
+      },
 
       // Twitter
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'Car Shipping Cost Calculator | Get Instant Car Transport Quotes'},
+      { name: "twitter:card", content: "summary_large_image" },
       {
-        name: 'twitter:description',
-        content: 'Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.'
+        name: "twitter:title",
+        content:
+          "Car Shipping Cost Calculator | Get Instant Car Transport Quotes",
       },
-      {name: 'twitter:image', content: 'https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg'}
+      {
+        name: "twitter:description",
+        content:
+          "Calculate your car shipping costs instantly with our easy-to-use car shipping cost calculator. Get quick and accurate quotes for vehicle transport.",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://www.xpresstransportation.org/assets/forgoogle2.48e9c249.jpg",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -48,7 +71,7 @@ export default {
     { src: "~/plugins/slider.js" },
     { src: "~/plugins/vmask.js" },
     { src: "~/plugins/vuelidate.js" },
-    { src: "~/assets/js/scripts.js" }
+    { src: "~/assets/js/scripts.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -58,27 +81,23 @@ export default {
   buildModules: ["@nuxtjs/tailwindcss"],
   tailwindcss: {
     configPath: "tailwind.config.js",
-    exposeConfig: true
+    exposeConfig: true,
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    "@nuxtjs/style-resources",
-    // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios"
-  ],
+  modules: ["@nuxtjs/style-resources", "@nuxtjs/axios", "@nuxtjs/gtm"],
 
   styleResources: {
-    scss: ["@/assets/scss/functions.scss"]
+    scss: ["@/assets/scss/functions.scss"],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: ""
+    baseURL: "",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extractCSS: true,
-    cssSourceMap: false
-  }
-}
+    cssSourceMap: false,
+  },
+};
