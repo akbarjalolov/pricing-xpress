@@ -12,15 +12,14 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import icons from "~/components/Icons.vue";
 import Header from "~/components/Header.vue";
 
 export default {
   components: {
     icons,
-    Header
-  }
+    Header,
+  },
 };
 </script>
 

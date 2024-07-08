@@ -22,7 +22,8 @@
                 {{ item.title }}
               </h2>
               <h2 v-else @click="isMenuOpen = false">
-                <a :href="item.link"
+                <a
+                  :href="item.link"
                   :to="item.link"
                   class="font-bold transition lg:text-[32px] text-[20px] leading-[38px] uppercase text-[#5C6670] w-[230px]"
                 >
@@ -84,7 +85,7 @@
         class="z-[999] right-0 left-0"
         :class="[
           isScrolled || isMenuOpen ? 'bg-[#F7FAFC]' : '',
-          isWidgetOpen ? 'relative' : 'fixed'
+          isWidgetOpen ? 'relative' : 'fixed',
         ]"
       >
         <div class="container">
@@ -92,7 +93,7 @@
             class="header__content flex justify-between items-center border-b-[1px] border-solid border-b-[#E6ECF0] transition"
             :class="[
               $route.fullPath !== '/' ? '' : '',
-              isScrolled ? 'py-12' : 'py-[33rem]'
+              isScrolled ? 'py-12' : 'py-[33rem]',
             ]"
           >
             <div
@@ -105,7 +106,10 @@
                   :class="isMenuOpen ? 'burger-active' : ''"
                 />
               </div>
-              <a class="logo-header" href="https://www.xpresstransportation.org/" >
+              <a
+                class="logo-header"
+                href="https://www.xpresstransportation.org/"
+              >
                 <icons name="logo_header" />
               </a>
             </div>
@@ -120,10 +124,10 @@
               >
                 <div class="flex items-between gap-4">
                   <div class="main-links">
-                    <a v-if="item.link !== ''"
+                    <a
+                      v-if="item.link !== ''"
                       :href="item.link"
                       class="font-semibold text-[16px] leading-[19px] text-[#212525]"
-
                     >
                       {{ item.title }}
                     </a>
@@ -148,12 +152,13 @@
               </div>
             </div>
             <div class="hidden lg:block">
-            <a href="tel: '9295665040'"
-                class=" call-us-btn transition pointer center gap-[8px] bg-[#244567] py-[6px] px-[12px] rounded-[6px] text-[#fff]">
-              <icons name="call_us" class="call-us" />
-              (929) 566-50-40
+              <a
+                href="tel: '9295665040'"
+                class="call-us-btn transition pointer center gap-[8px] bg-[#244567] py-[6px] px-[12px] rounded-[6px] text-[#fff]"
+              >
+                <icons name="call_us" class="call-us" />
+                (929) 566-50-40
               </a>
-            </div>
             </div>
           </div>
         </div>
@@ -168,21 +173,21 @@ export default {
       menu: [
         {
           title: "About Us",
-          link: "https://www.xpresstransportation.org/about-us"
+          link: "https://www.xpresstransportation.org/about-us",
         },
         {
           title: "Blog",
-          link: "https://www.xpresstransportation.org/blog"
+          link: "https://www.xpresstransportation.org/blog",
         },
         {
           title: "Contacts",
-          link: "https://www.xpresstransportation.org/contacts"
-        }
+          link: "https://www.xpresstransportation.org/contacts",
+        },
       ],
       isMenuOpen: false,
       isWidgetOpen: false,
       isScrolled: false,
-      heightDevice: ""
+      heightDevice: "",
     };
   },
   created() {
@@ -196,12 +201,11 @@ export default {
     handleScroll(event) {
       this.scrollTop = process.client ? window.pageYOffset : 0;
       if (this.scrollTop > 50) {
-        this.isScrolled = true
+        this.isScrolled = true;
       } else {
-        this.isScrolled = false
+        this.isScrolled = false;
       }
     },
-
   },
 };
 </script>
