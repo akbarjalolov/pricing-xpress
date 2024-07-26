@@ -71,8 +71,8 @@
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
-                <a href="tel:'(929) 566-50-40'" class="text-[#FF4E00]"
-                  >(929) 566-50-40</a
+                <a href="tel:'(929) 244-8696'" class="text-[#FF4E00]"
+                  >(929) 244-8696</a
                 >
               </p>
               <div class="shipper-info flex flex-col gap-[20px]">
@@ -223,8 +223,8 @@
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
-                <a href="tel:'(929) 566-50-40'" class="text-[#FF4E00]"
-                  >(929) 566-50-40</a
+                <a href="tel:'(929) 244-8696'" class="text-[#FF4E00]"
+                  >(929) 244-8696</a
                 >
               </p>
               <div class="shipper-info flex flex-col gap-[20px]">
@@ -406,74 +406,74 @@
               <button class="btn_blue" @click="premiumChoosen()">Choose</button>
             </div>
           </div>
+          <!--          <div-->
+          <!--            v-if="step === 4"-->
+          <!--            class="lg:col-span-4 col-span-12 information-form confirmation rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"-->
+          <!--            style="height: fit-content"-->
+          <!--          >-->
+          <!--            <h1 class="text-[30px] font-bold mb-[12px]">Confirmation</h1>-->
+          <!--            <div class="w-full relative mb-[12px]">-->
+          <!--              <span> Card Number </span>-->
+          <!--              <icons name="card" />-->
+          <!--              <el-input-->
+          <!--                v-model="cardInfo.number"-->
+          <!--                v-mask="'#### #### #### ####'"-->
+          <!--                :class="$v.cardInfo.number.$anyError ? 'hasError' : ''"-->
+          <!--                class="mt-[4px]"-->
+          <!--                placeholder="0000 0000 0000 0000"-->
+          <!--              ></el-input>-->
+          <!--            </div>-->
+          <!--            <div class="w-full mb-[12px] relative">-->
+          <!--              <span> Cardholder Name </span>-->
+          <!--              <icons name="user" />-->
+
+          <!--              <el-input-->
+          <!--                v-model="cardInfo.name"-->
+          <!--                :class="$v.cardInfo.name.$anyError ? 'hasError' : ''"-->
+          <!--                class="mt-[4px]"-->
+          <!--                placeholder="Name Surname"-->
+          <!--              ></el-input>-->
+          <!--            </div>-->
+          <!--            <div class="w-full mb-[12px] relative">-->
+          <!--              <span>Expiry date</span>-->
+          <!--              <icons name="date" />-->
+          <!--              <el-input-->
+          <!--                v-model="cardInfo.date"-->
+          <!--                v-mask="'##/##'"-->
+          <!--                :class="$v.cardInfo.date.$anyError ? 'hasError' : ''"-->
+          <!--                class="mt-[4px]"-->
+          <!--                placeholder="MM/YY"-->
+          <!--              ></el-input>-->
+          <!--            </div>-->
+          <!--            <div class="w-full mb-[12px] relative">-->
+          <!--              <span>CVV</span>-->
+          <!--              <icons name="cvv" />-->
+          <!--              <el-input-->
+          <!--                v-model="cardInfo.cvv"-->
+          <!--                v-mask="'####'"-->
+          <!--                :class="$v.cardInfo.cvv.$anyError ? 'hasError' : ''"-->
+          <!--                class="mt-[4px]"-->
+          <!--                placeholder="0000"-->
+          <!--              ></el-input>-->
+          <!--            </div>-->
+          <!--            <div class="w-full relative">-->
+          <!--              <span>ZIP/Postal code</span>-->
+          <!--              <icons name="mail" />-->
+
+          <!--              <el-input-->
+          <!--                v-model="cardInfo.zip"-->
+          <!--                v-mask="'#####'"-->
+          <!--                :class="$v.cardInfo.zip.$anyError ? 'hasError' : ''"-->
+          <!--                class="mt-[4px]"-->
+          <!--                placeholder="00000"-->
+          <!--              ></el-input>-->
+          <!--            </div>-->
+          <!--            <button class="w-full mt-[32rem]" @click="ccInfoValidate()">-->
+          <!--              Submit-->
+          <!--            </button>-->
+          <!--          </div>-->
           <div
             v-if="step === 4"
-            class="lg:col-span-4 col-span-12 information-form confirmation rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
-            style="height: fit-content"
-          >
-            <h1 class="text-[30px] font-bold mb-[12px]">Confirmation</h1>
-            <div class="w-full relative mb-[12px]">
-              <span> Card Number </span>
-              <icons name="card" />
-              <el-input
-                v-model="cardInfo.number"
-                v-mask="'#### #### #### ####'"
-                :class="$v.cardInfo.number.$anyError ? 'hasError' : ''"
-                class="mt-[4px]"
-                placeholder="0000 0000 0000 0000"
-              ></el-input>
-            </div>
-            <div class="w-full mb-[12px] relative">
-              <span> Cardholder Name </span>
-              <icons name="user" />
-
-              <el-input
-                v-model="cardInfo.name"
-                :class="$v.cardInfo.name.$anyError ? 'hasError' : ''"
-                class="mt-[4px]"
-                placeholder="Name Surname"
-              ></el-input>
-            </div>
-            <div class="w-full mb-[12px] relative">
-              <span>Expiry date</span>
-              <icons name="date" />
-              <el-input
-                v-model="cardInfo.date"
-                v-mask="'##/##'"
-                :class="$v.cardInfo.date.$anyError ? 'hasError' : ''"
-                class="mt-[4px]"
-                placeholder="MM/YY"
-              ></el-input>
-            </div>
-            <div class="w-full mb-[12px] relative">
-              <span>CVV</span>
-              <icons name="cvv" />
-              <el-input
-                v-model="cardInfo.cvv"
-                v-mask="'####'"
-                :class="$v.cardInfo.cvv.$anyError ? 'hasError' : ''"
-                class="mt-[4px]"
-                placeholder="0000"
-              ></el-input>
-            </div>
-            <div class="w-full relative">
-              <span>ZIP/Postal code</span>
-              <icons name="mail" />
-
-              <el-input
-                v-model="cardInfo.zip"
-                v-mask="'#####'"
-                :class="$v.cardInfo.zip.$anyError ? 'hasError' : ''"
-                class="mt-[4px]"
-                placeholder="00000"
-              ></el-input>
-            </div>
-            <button class="w-full mt-[32rem]" @click="ccInfoValidate()">
-              Submit
-            </button>
-          </div>
-          <div
-            v-if="step === 5"
             class="lg:col-span-4 col-span-12 information-form confirmation rounded-[16px] pt-[20px] px-[20px] pb-[32px] h-auto border-solid border-[1px] border-[#e6ecf0] relative z-[2]"
             style="height: fit-content"
           >
@@ -504,7 +504,6 @@
             style="height: fit-content"
           >
             <icons name="us_map" />
-            asdsadas
           </div>
 
           <div v-if="step > 2" class="col-span-12 lg:col-span-3 quote-details">

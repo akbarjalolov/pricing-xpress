@@ -157,7 +157,7 @@
                 class="call-us-btn transition pointer center gap-[8px] bg-[#244567] py-[6px] px-[12px] rounded-[6px] text-[#fff]"
               >
                 <icons name="call_us" class="call-us" />
-                (929) 566-50-40
+                (929) 244-8696
               </a>
             </div>
           </div>
