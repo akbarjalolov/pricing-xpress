@@ -1,11 +1,11 @@
 export const state = () => ({
-  zips: []
+  zips: [],
 });
 
 export const mutations = {
   SET_zips(state, zips) {
     state.zips = zips;
-  }
+  },
 };
 
 export const actions = {
@@ -15,13 +15,13 @@ export const actions = {
         .get(
           `https://back.usstartruckingllc.com/api/shipping/zip-codes/?search=${key}`
         )
-        .then(res => {
+        .then((res) => {
           commit("SET_zips", res.data.results);
           resolve();
         })
-        .catch(error => {
+        .catch((error) => {
           reject(error);
         });
     });
-  }
+  },
 };

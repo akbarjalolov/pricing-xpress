@@ -515,8 +515,8 @@
                 Price:
               </h1>
               <p>Total Price:</p>
-              <h2 class="text-[42px] text-[#244567] font-bold">
-                ${{ choosenPrice }}
+              <h2 class="text-[24px] text-[#244567] font-bold">
+                Calculating...
               </h2>
               <p>Due Now:</p>
               <h2 class="text-[42px] text-[#244567] font-bold">$0</h2>
@@ -2488,7 +2488,7 @@ export default {
               this.expeditedPrice = this.roundNearest5(price * 1.3);
               this.bestValue = this.roundNearest5(price * 1);
               this.premium = this.roundNearest5(price * 1.5);
-              this.step++;
+              this.step = 4;
             } else {
               this.$notify({
                 title: "Wrong zip code",

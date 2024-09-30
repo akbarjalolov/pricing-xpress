@@ -135,7 +135,7 @@
           class="col-span-12 flex md:justify-between justify-center flex-wrap gap-[10px] items-center pt-[20rem] border-t-[1px] border-t-[rgba(255,255,255,0.2)] border-solid"
         >
           <p class="font-normal text-[16px] leading-[130%] text-[#fff]">
-            © 2024 Xpress Auto Transport Inc.
+            © 2024 Xpress Auto Transportation Inc.
           </p>
           <p class="font-normal text-[16px] leading-[130%] text-[#fff]">
             All rights reserved
