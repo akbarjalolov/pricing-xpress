@@ -71,8 +71,8 @@
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
-                <a href="tel:'(929) 244-8696'" class="text-[#FF4E00]"
-                  >(929) 244-8696</a
+                <a href="tel:'(929) 566-5040'" class="text-[#FF4E00]"
+                  >(929) 566-5040</a
                 >
               </p>
               <div class="shipper-info flex flex-col gap-[20px]">
@@ -223,8 +223,8 @@
               >
                 Our Professional Team is Ready to Assist You. If you any help do
                 not hesitate to call us at
-                <a href="tel:'(929) 244-8696'" class="text-[#FF4E00]"
-                  >(929) 244-8696</a
+                <a href="tel:'(929) 566-5040'" class="text-[#FF4E00]"
+                  >(929) 566-5040</a
                 >
               </p>
               <div class="shipper-info flex flex-col gap-[20px]">

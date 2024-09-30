@@ -11,12 +11,12 @@
             alt=""
           />
           <a
-            href="tel: (929) 244-8696"
+            href="tel: (929) 566-5040"
             class="flex items-center gap-[8px] mb-[12px] transition"
           >
             <icons name="footer_tel" />
             <span class="font-semibold text-[16px] leading-[130%] text-[#fff]">
-              (929) 244-8696
+              (929) 566-5040
             </span>
           </a>
           <a
