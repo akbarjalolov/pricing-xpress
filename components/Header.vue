@@ -50,14 +50,14 @@
         <div class="flex z-10 flex-wrap justify-between items-center">
           <a
             target="_blank"
-            href="https://goo.gl/maps/wAZ5XAFwUFBYg14q8"
+            href="https://maps.app.goo.gl/rN87ruYpL5JQUP3E8"
             class="flex items-center gap-[8px] transition hover:opacity-60"
           >
             <icons color="#244567" name="location_icon" />
             <span
               class="font-semibold text-[16px] leading-[130%] text-[#212525]"
             >
-              7306-14th Ave Fl 1, Brooklyn , NY 11228
+            3073 Allendale Dr, Indian Land, SC 29707, USA
             </span>
           </a>
           <div class="flex mt-[20px] gap-[12px]">
@@ -110,7 +110,7 @@
                 class="logo-header"
                 href="https://www.xpresstransportation.org/"
               >
-                <icons name="logo_header" />
+                <icons class="w-[250px]" name="logo_header" />
               </a>
             </div>
             <div

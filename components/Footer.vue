@@ -35,7 +35,7 @@
           >
             <icons name="location_icon" />
             <span class="font-semibold text-[16px] leading-[130%] text-[#fff]">
-              7306-14th Ave Fl 1, Brooklyn , NY 11228
+              3073 Allendale Dr, Indian Land, SC 29707
             </span>
           </a>
           <div class="flex mt-[20px] gap-[12px]">
@@ -135,7 +135,7 @@
           class="col-span-12 flex md:justify-between justify-center flex-wrap gap-[10px] items-center pt-[20rem] border-t-[1px] border-t-[rgba(255,255,255,0.2)] border-solid"
         >
           <p class="font-normal text-[16px] leading-[130%] text-[#fff]">
-            © 2024 Xpress Auto Transportation Inc.
+            © 2025 Xpress Auto Transportation Inc.
           </p>
           <p class="font-normal text-[16px] leading-[130%] text-[#fff]">
             All rights reserved
